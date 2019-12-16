@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task no 1 | lab no 7</title>
+
+
+
+
+</head>
+<body>
+
+        
+        <h3 id="phone">
+        
+        </h3>
+        <h3 id="funcs">
+            
+        </h3>
+        <b>Sabzi:</b>
+        <ul id="Sabzi">
+
+        </ul>
+
+        <script>
+            var sabzi = ["bhindi","bengan", "karela", "toori", "software"];
+            for (let index = 0; index < sabzi.length; index++) {
+                document.getElementById("Sabzi").innerHTML += "<li>"+sabzi[index]+"</li>"
+                
+            }
+                function phone(model, company, price, color) {
+                  
+                    this.model = model;
+                    this.company = company;
+                    this.price = price;
+                    this.color = color;
+                    
+                }
+                var ph1 = new phone("X", "iPhone", "Rs. 130000", "black");
+
+                document.getElementById('phone').innerHTML = "Model: "+ph1.model+"<br>Company: "+ph1.company+"<br> Price: "+ph1.price+"<br> Color: "+ph1.color;
+                
+                
+
+
+            //     var phone = { 
+            //         model: "X",
+            //         company: "iPhone",
+            //         price: "Rs. 120000",
+            //         colors: "Black",
+            //         sendMsg: function sendMsg(msg){
+            //             return "msg: "+msg;
+            //         },
+            //         call: function calll(num) {
+            //             return "calling "+num+"...";
+            //         }
+            //     }
+            // for(x in phone){
+            //     var txt = "";
+            //     if (typeof(phone[x]) === "string" ) {
+            //        txt += phone[x];
+            //        document.getElementById("phone").innerHTML += txt+"<br>";
+
+            //    }else if (typeof(phone[x]) === "function" ) {
+            //     document.getElementById("funcs").innerHTML = phone.sendMsg("hello world")+"<br>"+phone.call("03353911190");
+            //    }
+            
+            // }    
+
+            
+            </script>
+</body>
+</html>
